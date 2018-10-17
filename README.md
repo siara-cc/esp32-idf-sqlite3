@@ -1,5 +1,5 @@
-SQLite3 library
-===============
+SQLite3 library for ESP-IDF framework
+=====================================
 
 Overview
 --------
