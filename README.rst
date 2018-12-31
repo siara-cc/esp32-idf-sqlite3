@@ -17,6 +17,17 @@ Unzip this project under esp-idf/components folder.  Or if you are cloning the r
 
 `git submodule add https://github.com/siara-cc/esp32-idf-sqlite3 components/esp32-idf-sqlite3`.
 
+Using examples
+--------------
+
+1. Download [esp-idf-v3.1.1.zip](https://github.com/espressif/esp-idf/releases/download/v3.1.1/esp-idf-v3.1.1.zip) that includes submodules and unzip
+2. `cd esp-idf-v3.1.1`, set path to `xtensa-esp32-elf/bin` and set `IDF_PATH`
+3. `git submodule add https://github.com/siara-cc/esp32-idf-sqlite3 components/esp32-idf-sqlite3`
+4. `git submodule add https://github.com/siara-cc/esp32-idf-sqlite3-examples examples/esp32-idf-sqlite3-examples`
+5. `cd examples/esp32-idf-sqlite3-examples/spiffs`
+6. `make flash`
+7. To check output, use `miniterm.py <device> 115200` and reset board
+
 Information specific to ESP-IDF
 -------------------------------
 
