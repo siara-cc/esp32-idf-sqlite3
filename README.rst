@@ -6,7 +6,7 @@ Overview
 
 Create / access SQLite3 database files using this library through SPIFFS / SD Cards.
 
-For more information, please see https://github.com/siara-cc/esp32_arduino_sqlite3_lib
+For more information, please see https://github.com/siara-cc/esp32_arduino_sqlite3_lib.
 
 Installation
 ------------
