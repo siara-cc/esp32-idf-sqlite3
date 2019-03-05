@@ -502,7 +502,8 @@ int esp32_Sync(sqlite3_file *id, int flags)
 	esp32_file *file = (esp32_file*) id;
 
 	int rc = fflush( file->fd );
-	dbg_printf("esp32_Sync: %d\n", rc);
+        fsync(fileno(file->fd));
+        dbg_printf("esp32_Sync( %s: ): %d \n",file->name, rc);
 
 	return rc ? SQLITE_IOERR_FSYNC : SQLITE_OK;
 }
