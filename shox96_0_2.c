@@ -171,7 +171,7 @@ int shox96_0_2_compress(const char *in, int len, char *out, struct lnk_lst *prev
   byte state;
 
   int l, ll, ol;
-  char c_in, c_next, c_prev;
+  unsigned char c_in, c_next, c_prev;
   byte is_upper, is_all_upper;
 
   ol = 0;
