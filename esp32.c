@@ -14,12 +14,12 @@
 #include <time.h>
 #include <unistd.h>
 #include <sqlite3.h>
-#include <esp_spi_flash.h>
 #include <esp_system.h>
 #include <rom/ets_sys.h>
 #include <sys/stat.h>
 
 #include "shox96_0_2.h"
+#include "esp_idf_compat.h"
 
 #undef dbg_printf
 //#define dbg_printf(...) printf(__VA_ARGS__)
