@@ -58,6 +58,7 @@ The ESP-IDF version is handled in private_include/esp_idf_compat.h
 Without this changes this component should work with **ESP-IDF v4.X.X**.
 
 The `examples <https://github.com/siara-cc/esp32-idf-sqlite3-examples/tree/master>`_ where tested with **ESP-IDF Visual Studio Code Extension v1.6.5**. For them to work I had to do some changes:
+
 * In the file `main/CMakeLists.txt` the line `idf_build_component(esp32-idf-sqlite3)` must be commented.
 * In the file `CMakeLists.txt` (in root)  the line `include($ENV{IDF_PATH}/tools/cmake/idf.cmake)` must be commented and  the line `include($ENV{IDF_PATH}/tools/cmake/project.cmake)` must be decomented.
 
