@@ -45,6 +45,18 @@ Many configurations specific to SQLite library have been set in the `sdkconfig.d
 
 The Flash size has been assumed as 4MB for SPIFFS example. Please change any of these configurations if necessary.
 
+ESP-IDF Compatibility
+---------------------
+The user KikyTokamuro indicated in the `issues <https://github.com/siara-cc/esp32-idf-sqlite3/issues/18>`_ that you must do this changes for this component to work with **ESP-IDF v5.X.X**:
+
+* In the file "esp32-idf-sqlite3/CMakeLists.txt" add 'spi_flash' to REQUIRES.
+
+It was tested and work in **ESP-IDF v5.0.2-dirty** and **ESP-IDF v5.1.1-dirty**.
+
+The ESP-IDF version is handled in private_include/esp_idf_compat.h
+
+Without this changes this component should work with **ESP-IDF v4.X.X**.
+
 Issues
 ------
 
